@@ -1,0 +1,1 @@
+"use strict";Object.defineProperty(exports,"__esModule",{value:true});function _export(target,all){for(var name in all)Object.defineProperty(target,name,{enumerable:true,get:all[name]})}_export(exports,{cardBody:function(){return cardBody},default:function(){return _default}});var cardBody={defaultProps:{className:""},styles:{base:{p:"p-6"}}};var _default=cardBody;

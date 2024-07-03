@@ -1,0 +1,1 @@
+"use strict";Object.defineProperty(exports,"__esModule",{value:true});function _export(target,all){for(var name in all)Object.defineProperty(target,name,{enumerable:true,get:all[name]})}_export(exports,{timelineBody:function(){return timelineBody},default:function(){return _default}});var timelineBody={styles:{base:{display:"flex",gap:"gap-4"}}};var _default=timelineBody;

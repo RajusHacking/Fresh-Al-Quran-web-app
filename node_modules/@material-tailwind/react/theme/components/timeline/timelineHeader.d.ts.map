@@ -1,0 +1,1 @@
+{"version":3,"file":"timelineHeader.d.ts","sourceRoot":"","sources":["../../../../src/theme/components/timeline/timelineHeader.ts"],"names":[],"mappings":"AAAA,MAAM,WAAW,wBAAwB;IACvC,MAAM,CAAC,EAAE;QACP,IAAI,CAAC,EAAE,MAAM,CAAC;KACf,CAAC;CACH;AAED,eAAO,MAAM,cAAc,EAAE,wBAQ5B,CAAC;AAEF,eAAe,cAAc,CAAC"}

@@ -1,0 +1,173 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+/* font family customize  */
+
+@font-face {
+	font-family: "Quran";
+	src: url("./Fonts/UthmanicHafs1Ver18.woff2") format("woff2"); /* Adjust the path if necessary */
+	font-weight: 300;
+	font-style: normal;
+}
+
+h1 {
+	color: var(--primary__color);
+	font-family: "Hind Siliguri", sans-serif;
+	font-weight: 600;
+	font-style: normal;
+}
+h2 {
+	font-family: "Hind Siliguri", sans-serif;
+	font-weight: 600;
+	font-style: normal;
+}
+.Noto__Naskh__Arabic {
+	font-family: "Noto Naskh Arabic", serif;
+	font-optical-sizing: auto;
+	font-weight: 400;
+	font-style: normal;
+}
+h3 {
+	font-family: "Quran";
+}
+h4,
+span {
+	font-family: "Hind Siliguri", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+}
+li {
+	font-family: "Noto Sans Bengali", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 400;
+	font-style: normal;
+	font-variation-settings: "wdth" 100;
+}
+/* color manage  */
+
+:root {
+	--primary__color: #e49733;
+	--bg__body__home: #f8ebd5;
+	--bg__surah__card: #fff7ea;
+	--bg__tab: #efe2cd;
+	--text__title: #423000;
+	--text__sub__title: #524f38;
+	--border__color: rgb(100 116 139 / 0.1);
+}
+
+.theme__dark__mode {
+	--primary__color: #25c8ff;
+	--bg__body__home: #000000;
+	--bg__surah__card: #313235fa;
+	--bg__tab: #1a1e2ab8;
+	--text__title: #e5f1f7;
+	--text__sub__title: #d6dde6;
+	--border__color: rgba(70, 84, 104, 0.322);
+}
+
+body {
+	color: var(--text__title);
+	background: var(--bg__body__home);
+}
+.current {
+	color: var(--primary__color);
+}
+.current__bg {
+	background: var(--primary__color);
+}
+.text__title {
+	color: var(--text__title);
+}
+.text__sub__title {
+	color: var(--text__sub__title);
+}
+
+.tab__bg {
+	background: var(--bg__tab);
+}
+.main__bg {
+	background: var(--bg__body__home);
+}
+.card__bg {
+	background: var(--bg__surah__card);
+}
+.__border {
+	border-bottom: 1px solid;
+	border-color: var(--border__color);
+}
+.border__color {
+	border-color: var(--border__color);
+}
+.abu__bakar__img {
+	border-color: var(--primary__color);
+}
+.option__border {
+	border: 1px solid var(--bg__tab);
+}
+.option__border__active {
+	border: 2px solid var(--primary__color);
+}
+
+.template h4 {
+	color: var(--text__title);
+}
+
+.surah__card {
+	background: var(--bg__surah__card);
+	color: var(--text__title);
+}
+.surah__card ul {
+	background: var(--bg__body__home);
+}
+.surah__card h4 {
+	color: var(--text__sub__title);
+}
+
+.theme__switch__a {
+	transition: all 0.5s;
+	transform: translate(98px);
+}
+.font__switch__a {
+	transition: all 0.5s;
+	transform: translate(43px);
+}
+.font__switch__b {
+	transition: all 0.5s;
+	transform: translate(49px);
+}
+.trans__back {
+	transform: translate(0);
+	transition: all 0.5s;
+}
+
+/* width manage  */
+
+.my__container {
+	width: 100%;
+}
+
+@media (min-width: 1024px) {
+	.my__container {
+		max-width: 970px;
+		padding-left: 40px;
+		padding-right: 40px;
+	}
+
+	.logo-img {
+		width: 168px;
+		padding: 0;
+	}
+}
+@media (min-width: 1260px) {
+	.my__container {
+		max-width: 1350px;
+		padding-left: 80px;
+		padding-right: 80px;
+	}
+}
