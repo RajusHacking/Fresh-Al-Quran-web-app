@@ -62,12 +62,12 @@ li {
 }
 
 .theme__dark__mode {
-	--primary__color: #25c8ff;
-	--bg__body__home: #000000;
-	--bg__surah__card: #313235fa;
+	--primary__color: rgb(56, 189, 248);
+	--bg__body__home: rgb(15, 23, 42);
+	--bg__surah__card: rgba(43, 48, 58, 0.4);
 	--bg__tab: #1a1e2ab8;
-	--text__title: #e5f1f7;
-	--text__sub__title: #d6dde6;
+	--text__title: #beccdf;
+	--text__sub__title: #94a3b8;
 	--border__color: rgba(70, 84, 104, 0.322);
 }
 

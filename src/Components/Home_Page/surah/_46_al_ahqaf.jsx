@@ -45,7 +45,7 @@ const _46_al_ahqaf = () => {
 	let arb__no = "no";
 	const [arabic__show, setArabic__show] = useState(() => {
 		const saved__arabic__show = localStorage.getItem("arabic__show");
-		return saved__arabic__show !== null ? saved__arabic__show : arb__yes;
+		return saved__arabic__show !== null ? saved__arabic__show : arb__no;
 	});
 
 	const arabic__show__btn = () =>
@@ -58,7 +58,7 @@ const _46_al_ahqaf = () => {
 	}, [arabic__show]);
 
 	// arabic font size
-	let arb__big = "text-[28px]";
+	let arb__big = "text-[33px]";
 	let arb__small = "text-[23px]";
 	const [arabic__font, setArabic__font] = useState(() => {
 		const saved__arabic__font = localStorage.getItem("arabic__font");
@@ -79,7 +79,7 @@ const _46_al_ahqaf = () => {
 	let bn__no = "no";
 	const [bangla__show, setBangla__show] = useState(() => {
 		const saved__bangla__show = localStorage.getItem("bangla__show");
-		return saved__bangla__show !== null ? saved__bangla__show : bn__yes;
+		return saved__bangla__show !== null ? saved__bangla__show : bn__no;
 	});
 
 	const bangla__show__btn = () =>
@@ -92,8 +92,8 @@ const _46_al_ahqaf = () => {
 	}, [bangla__show]);
 
 	// bangla font size
-	let bn__small = "text-[18px]";
-	let bn__big = "text-[23px]";
+	let bn__small = "text-[17px]";
+	let bn__big = "text-[25px]";
 	const [bangla__font, setBangla__font] = useState(() => {
 		const saved__bangla__font = localStorage.getItem("bangla__font");
 		return saved__bangla__font !== null ? saved__bangla__font : bn__small;
@@ -111,7 +111,7 @@ const _46_al_ahqaf = () => {
 	let tafsir__no = "no";
 	const [tafsir__show, setTafsir__show] = useState(() => {
 		const saved__tafsir__show = localStorage.getItem("tafsir__show");
-		return saved__tafsir__show !== null ? saved__tafsir__show : tafsir__no;
+		return saved__tafsir__show !== null ? saved__tafsir__show : tafsir__yes;
 	});
 
 	const tafsir__show__btn = () =>
@@ -397,7 +397,7 @@ const _46_al_ahqaf = () => {
 			<div className="card__bg">
 				<div className="my__container m-auto">
 					<div className="flex flex-col justify-center items-center">
-						<h3 className=" Noto__Naskh__Arabic mb-5 pt-[80px] text-[22px]">
+						<h3 className=" Noto__Naskh__Arabic mb-5 pt-[80px] lg:pt-[100px] text-[22px]">
 							﷽
 						</h3>
 					</div>
