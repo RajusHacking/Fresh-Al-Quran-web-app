@@ -421,7 +421,7 @@ const _94_ash_sharh = () => {
 								>
 									<h3
 										className={`
-											${surah.arabic_font}  ${
+											${
 											arabic__font === arb__big
 												? arb__big
 												: arb__small

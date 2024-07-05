@@ -421,7 +421,7 @@ const _112_al_ikhlas = () => {
 								>
 									<h3
 										className={`
-											${surah.arabic_font}  ${
+											${
 											arabic__font === arb__big
 												? arb__big
 												: arb__small

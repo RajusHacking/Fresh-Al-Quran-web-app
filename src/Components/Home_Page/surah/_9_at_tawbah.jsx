@@ -421,7 +421,7 @@ const _9_at_tawbah = () => {
 								>
 									<h3
 										className={`
-											${surah.arabic_font}  ${
+											${
 											arabic__font === arb__big
 												? arb__big
 												: arb__small
