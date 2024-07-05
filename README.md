@@ -2,7 +2,7 @@
             flex-direction: column;">
 <h1>Fresh Al Quranul Karim Bangla</h1>      
 <div class="">
-<a src="https://quranul-karim-bangla.vercel.app/">
+<a href="https://quranul-karim-bangla.vercel.app/">
             <img style="width: 100%;
           height: 100%;" src="https://github.com/RajusHacking/Fresh-Al-Quran-web-app/blob/main/src/img/readme_image/01.png" alt="">
 </div>
