@@ -1,5 +1,3 @@
-
-
 import { GiSettingsKnobs } from "react-icons/gi";
 import { SlArrowLeft } from "react-icons/sl";
 import { IoClose } from "react-icons/io5";
@@ -9,10 +7,9 @@ import day__icon from "../../../img/day.png";
 import night__icon from "../../../img/night.png";
 import Surah__info from "../../../Json/surah/_1_al_fatihah.json";
 import { MdKeyboardArrowDown } from "react-icons/md";
-   
-const _1_al_fatihah = () => {
 
-    const number = "১";
+const _1_al_fatihah = () => {
+	const number = "১";
 	const name = "আল-ফাতিহা";
 	const means = "সূচনা";
 	const verse_num_bn = "৭";
@@ -134,8 +131,8 @@ const _1_al_fatihah = () => {
 		localStorage.setItem("tafsir__show", tafsir__show);
 	}, [tafsir__show]);
 
-  return (
-    <>
+	return (
+		<>
 			<nav className="__border fixed w-full top- z-50 border-b backdrop-blur-md ">
 				<div className=" flex justify-between items-center  h-[50px] lg:h-[66px] m-auto my__container">
 					<Link
@@ -397,7 +394,7 @@ const _1_al_fatihah = () => {
 			<div className="card__bg">
 				<div className="my__container m-auto">
 					<div className="flex flex-col justify-center items-center">
-						<h3 className=" Noto__Naskh__Arabic mb-5 pt-[80px] lg:pt-[100px] text-[22px]">
+						<h3 className=" Noto__Naskh__Arabic mb-5 pt-[80px] lg:pt-[110px] text-[22px]">
 							﷽
 						</h3>
 					</div>
@@ -421,11 +418,7 @@ const _1_al_fatihah = () => {
 								>
 									<h3
 										className={`
-											${
-											arabic__font === arb__big
-												? arb__big
-												: arb__small
-										} py-3 w-full text-right`}
+											${arabic__font === arb__big ? arb__big : arb__small} py-3 w-full text-right`}
 									>
 										{surah.arabic_text}
 									</h3>
@@ -498,7 +491,7 @@ const _1_al_fatihah = () => {
 				</div>
 			</div>
 		</>
-  )
-}
+	);
+};
 
-export default _1_al_fatihah
+export default _1_al_fatihah;
