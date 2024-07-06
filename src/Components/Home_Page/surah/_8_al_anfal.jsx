@@ -173,7 +173,7 @@ const _8_al_anfal = () => {
 					</div>
 					<span
 						onClick={settings__switch}
-						className="toggle-view-mode flex gap-3 p-3 m-2 hover:bg-slate-500/10 rounded-full cursor-pointer"
+						className="toggle-view-mode flex gap-3 p-3 m-2 active:bg-slate-500/10 rounded-full cursor-pointer"
 					>
 						<GiSettingsKnobs />
 					</span>
@@ -421,7 +421,7 @@ const _8_al_anfal = () => {
 								>
 									<h3
 										className={`
-											${
+											  ${
 											arabic__font === arb__big
 												? arb__big
 												: arb__small
