@@ -9,11 +9,11 @@ import Surah__info from "../../../Json/surah/_113_al_falaq.json";
 import { MdKeyboardArrowDown } from "react-icons/md";
 
 const _113_al_falaq = () => {
-	const number = "১১২";
-	const name = "আল-ইখলাস";
-	const means = "একনিষ্ঠতা";
-	const verse_num_bn = "৪";
-	const place = "মক্কা";
+	const number = "১১৩";
+	const name = "আল-ফালাক্ব";
+	const means = "নিশিভোর";
+	const verse_num_bn = "৫";
+	const place = "মদিনা";
 
 	// setting button works
 	const [settings, setSettings] = useState("close");

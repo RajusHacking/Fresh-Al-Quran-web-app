@@ -9,10 +9,10 @@ import Surah__info from "../../../Json/surah/_114_an_nas.json";
 import { MdKeyboardArrowDown } from "react-icons/md";
 
 const _114_an_nas = () => {
-	const number = "১১২";
-	const name = "আল-ইখলাস";
-	const means = "একনিষ্ঠতা";
-	const verse_num_bn = "৪";
+	const number = "১১৪";
+	const name = "আন-নাস";
+	const means = "মানবজাতি";
+	const verse_num_bn = "৬";
 	const place = "মক্কা";
 
 	// setting button works
