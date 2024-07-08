@@ -133,6 +133,10 @@ const _93_ad_duha = () => {
 	useEffect(() => {
 		localStorage.setItem("tafsir__show", tafsir__show);
 	}, [tafsir__show]);
+    
+    useEffect(() => {
+		window.scrollTo(0, 0);
+	}, []);
 
   return (
     <>

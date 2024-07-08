@@ -133,6 +133,10 @@ const _16_an_nahl = () => {
 	useEffect(() => {
 		localStorage.setItem("tafsir__show", tafsir__show);
 	}, [tafsir__show]);
+    
+    useEffect(() => {
+		window.scrollTo(0, 0);
+	}, []);
 
   return (
     <>

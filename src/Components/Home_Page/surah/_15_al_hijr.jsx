@@ -133,6 +133,10 @@ const _15_al_hijr = () => {
 	useEffect(() => {
 		localStorage.setItem("tafsir__show", tafsir__show);
 	}, [tafsir__show]);
+    
+    useEffect(() => {
+		window.scrollTo(0, 0);
+	}, []);
 
   return (
     <>

@@ -131,6 +131,10 @@ const _113_al_falaq = () => {
 		localStorage.setItem("tafsir__show", tafsir__show);
 	}, [tafsir__show]);
 
+	useEffect(() => {
+		window.scrollTo(0, 0);
+	}, []);
+
 	return (
 		<>
 			<nav className="__border fixed w-full top- z-50 border-b backdrop-blur-md ">

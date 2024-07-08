@@ -133,6 +133,10 @@ const _73_al_muzzammil = () => {
 	useEffect(() => {
 		localStorage.setItem("tafsir__show", tafsir__show);
 	}, [tafsir__show]);
+    
+    useEffect(() => {
+		window.scrollTo(0, 0);
+	}, []);
 
   return (
     <>
