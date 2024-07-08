@@ -484,9 +484,7 @@ const {component_name} = () => {{
 										}}
 									>
 										<h4
-											onClick={{() =>
-												open__my__accordion(surah.id)
-											}}
+											
 											className={{`py-2 w-full text-justify" ${{
 												bangla__font === bn__big
 													? bn__big
@@ -528,5 +526,5 @@ def create_jsx_files(file_names_jsx, surah_name_bn, folder_path):
 
 # Main function
 if __name__ == "__main__":
-    specific_path = "./src/Components/Home_Page/surah"
+    specific_path = "../src/Components/Home_Page/surah"
     create_jsx_files(file_names_jsx, surah_name_bn, specific_path)

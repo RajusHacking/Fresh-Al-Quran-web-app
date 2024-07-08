@@ -478,9 +478,7 @@ const _97_al_qadr = () => {
 										}
 									>
 										<h4
-											onClick={() =>
-												open__my__accordion(surah.id)
-											}
+											
 											className={`py-2 w-full text-justify" ${
 												bangla__font === bn__big
 													? bn__big
