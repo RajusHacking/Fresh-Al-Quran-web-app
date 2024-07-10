@@ -65,7 +65,7 @@ li {
 	--primary__color: rgb(56, 189, 248);
 	--bg__body__home: rgb(15, 23, 42);
 	--bg__surah__card: rgba(43, 48, 58, 0.4);
-	--bg__tab: rgba(70, 84, 104, 0.25);
+	--bg__tab: rgba(0, 0, 0, 0.103);
 	--text__title: #beccdf;
 	--text__sub__title: #94a3b8;
 	--border__color: rgba(70, 84, 104, 0.322);
