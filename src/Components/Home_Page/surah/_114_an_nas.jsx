@@ -7,6 +7,7 @@ import day__icon from "../../../img/day.png";
 import night__icon from "../../../img/night.png";
 import Surah__info from "../../../Json/surah/_114_an_nas.json";
 import { MdKeyboardArrowDown } from "react-icons/md";
+import { ScrollRestoration } from "react-router-dom";
 
 const _114_an_nas = () => {
 	const number = "১১৪";
@@ -55,7 +56,7 @@ const _114_an_nas = () => {
 	}, [arabic__show]);
 
 	// arabic font size
-	let arb__big = "text-[28px]";
+	let arb__big = "text-[33px]";
 	let arb__small = "text-[23px]";
 	const [arabic__font, setArabic__font] = useState(() => {
 		const saved__arabic__font = localStorage.getItem("arabic__font");
@@ -89,8 +90,8 @@ const _114_an_nas = () => {
 	}, [bangla__show]);
 
 	// bangla font size
-	let bn__small = "text-[18px]";
-	let bn__big = "text-[23px]";
+	let bn__small = "text-[17px]";
+	let bn__big = "text-[25px]";
 	const [bangla__font, setBangla__font] = useState(() => {
 		const saved__bangla__font = localStorage.getItem("bangla__font");
 		return saved__bangla__font !== null ? saved__bangla__font : bn__small;
@@ -108,7 +109,7 @@ const _114_an_nas = () => {
 	let tafsir__no = "no";
 	const [tafsir__show, setTafsir__show] = useState(() => {
 		const saved__tafsir__show = localStorage.getItem("tafsir__show");
-		return saved__tafsir__show !== null ? saved__tafsir__show : tafsir__no;
+		return saved__tafsir__show !== null ? saved__tafsir__show : tafsir__yes;
 	});
 
 	const tafsir__show__btn = () =>
@@ -130,10 +131,6 @@ const _114_an_nas = () => {
 	useEffect(() => {
 		localStorage.setItem("tafsir__show", tafsir__show);
 	}, [tafsir__show]);
-
-	useEffect(() => {
-		window.scrollTo(0, 0);
-	}, []);
 
 	return (
 		<>
@@ -187,12 +184,12 @@ const _114_an_nas = () => {
 						: "hidden"
 				}
 			>
-				<div className="absolute top-[40px] bottom-0 w-full justify-center items-center backdrop-blur bg-neutral-800/70 m-auto">
+				<div className="absolute top-[40px] bottom-0 w-full justify-center items-center backdrop-blur-md bg-neutral-950/60 m-auto">
 					<div className="flex justify-center items-center pt-[140px]">
-						<div className=" flex flex-col justify-between items-center w-[350px] mx-5 card__bg rounded-md p-3 option__border">
+						<div className=" flex flex-col justify-between items-center w-[350px] mx-5 card__bg rounded-md p-3 settings__border">
 							<div className="settings__title__bar flex justify-between items-center w-full mb-5">
 								<span></span>
-								<h1 className="text-[25px] pl-5">Settings</h1>
+								<h1 className="text-[25px] pl-5">নিয়ন্ত্রণ</h1>
 								<span
 									onClick={settings__switch}
 									className=" hover:scale-95 cursor-pointer bg-slate-900/10 p-1 mr-1 rounded-full"
@@ -398,7 +395,7 @@ const _114_an_nas = () => {
 			<div className="card__bg">
 				<div className="my__container m-auto">
 					<div className="flex flex-col justify-center items-center">
-						<h3 className=" Noto__Naskh__Arabic mb-5 pt-[80px] text-[22px]">
+						<h3 className=" Noto__Naskh__Arabic mb-5 pt-[80px] lg:pt-[100px] text-[22px]">
 							﷽
 						</h3>
 					</div>
@@ -422,11 +419,7 @@ const _114_an_nas = () => {
 								>
 									<h3
 										className={`
-											${surah.arabic_font}  ${
-											arabic__font === arb__big
-												? arb__big
-												: arb__small
-										} py-3 w-full text-right`}
+											  ${arabic__font === arb__big ? arb__big : arb__small} py-3 w-full text-right`}
 									>
 										{surah.arabic_text}
 									</h3>
@@ -495,6 +488,7 @@ const _114_an_nas = () => {
 					</div>
 				</div>
 			</div>
+			<ScrollRestoration />
 		</>
 	);
 };

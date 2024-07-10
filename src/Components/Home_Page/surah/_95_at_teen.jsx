@@ -9,6 +9,8 @@ import day__icon from "../../../img/day.png";
 import night__icon from "../../../img/night.png";
 import Surah__info from "../../../Json/surah/_95_at_teen.json";
 import { MdKeyboardArrowDown } from "react-icons/md";
+import {ScrollRestoration} from "react-router-dom";
+
    
 const _95_at_teen = () => {
 
@@ -134,9 +136,7 @@ const _95_at_teen = () => {
 		localStorage.setItem("tafsir__show", tafsir__show);
 	}, [tafsir__show]);
     
-    useEffect(() => {
-		window.scrollTo(0, 0);
-	}, []);
+    
 
   return (
     <>
@@ -190,12 +190,12 @@ const _95_at_teen = () => {
 						: "hidden"
 				}
 			>
-				<div className="absolute top-[40px] bottom-0 w-full justify-center items-center backdrop-blur bg-neutral-800/70 m-auto">
+				<div className="absolute top-[40px] bottom-0 w-full justify-center items-center backdrop-blur-md bg-neutral-950/60 m-auto">
 					<div className="flex justify-center items-center pt-[140px]">
-						<div className=" flex flex-col justify-between items-center w-[350px] mx-5 card__bg rounded-md p-3 option__border">
+						<div className=" flex flex-col justify-between items-center w-[350px] mx-5 card__bg rounded-md p-3 settings__border">
 							<div className="settings__title__bar flex justify-between items-center w-full mb-5">
 								<span></span>
-								<h1 className="text-[25px] pl-5">Settings</h1>
+								<h1 className="text-[25px] pl-5">নিয়ন্ত্রণ</h1>
 								<span
 									onClick={settings__switch}
 									className=" hover:scale-95 cursor-pointer bg-slate-900/10 p-1 mr-1 rounded-full"
@@ -499,6 +499,7 @@ const _95_at_teen = () => {
 					</div>
 				</div>
 			</div>
+			<ScrollRestoration />
 		</>
   )
 }

@@ -107,11 +107,14 @@ body {
 .abu__bakar__img {
 	border-color: var(--primary__color);
 }
+.option__border__active {
+	border: 2px solid var(--primary__color);
+}
 .option__border {
 	border: 1px solid var(--bg__tab);
 }
-.option__border__active {
-	border: 2px solid var(--primary__color);
+.settings__border {
+	border: 1px solid var(--border__color);
 }
 
 .template h4 {

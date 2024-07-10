@@ -24,21 +24,22 @@ const Header = () => {
 		document.body.className = theme;
 	}, [theme]);
 
+	// const [Quran, setQuran] = useState("close");
+	// const Toggle__info = () => Quran == "close" ? setQuran("open") : setQuran("close");
+
 	return (
 		<>
 			<nav className="__border sticky top-[-1px] z-50 backdrop-blur-md">
 				<div className="my__container flex justify-between items-center  h-[50px] lg:h-[66px] m-auto ">
-					<div className="logo-div">
-						<NavLink to="/">
-							<img
-								src={
-									theme === "theme__dark__mode"
-										? logo__dark
-										: logo__light
-								}
-								className="w-[120px] ml-[15px]"
-							/>
-						</NavLink>
+					<div className="logo-div ">
+						<img
+							src={
+								theme === "theme__dark__mode"
+									? logo__dark
+									: logo__light
+							}
+							className="w-[45px] ml-[15px]"
+						/>
 					</div>
 					<NavLink
 						onClick={switch__theme}
