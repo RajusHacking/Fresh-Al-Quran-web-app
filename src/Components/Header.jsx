@@ -38,7 +38,7 @@ const Header = () => {
 									? logo__dark
 									: logo__light
 							}
-							className="w-[45px] ml-[15px]"
+							className="w-[40px] ml-[15px]"
 						/>
 					</div>
 					<NavLink

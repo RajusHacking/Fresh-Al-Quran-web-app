@@ -1,5 +1,3 @@
-
-
 import { GiSettingsKnobs } from "react-icons/gi";
 import { SlArrowLeft } from "react-icons/sl";
 import { IoClose } from "react-icons/io5";
@@ -9,12 +7,10 @@ import day__icon from "../../../img/day.png";
 import night__icon from "../../../img/night.png";
 import Surah__info from "../../../Json/surah/_1_al_fatihah.json";
 import { MdKeyboardArrowDown } from "react-icons/md";
-import {ScrollRestoration} from "react-router-dom";
+import { ScrollRestoration } from "react-router-dom";
 
-   
 const _1_al_fatihah = () => {
-
-    const number = "১";
+	const number = "১";
 	const name = "আল-ফাতিহা";
 	const means = "সূচনা";
 	const verse_num_bn = "৭";
@@ -135,11 +131,9 @@ const _1_al_fatihah = () => {
 	useEffect(() => {
 		localStorage.setItem("tafsir__show", tafsir__show);
 	}, [tafsir__show]);
-    
-    
 
-  return (
-    <>
+	return (
+		<>
 			<nav className="__border fixed w-full top- z-50 border-b backdrop-blur-md ">
 				<div className=" flex justify-between items-center  h-[50px] lg:h-[66px] m-auto my__container">
 					<Link
@@ -425,11 +419,7 @@ const _1_al_fatihah = () => {
 								>
 									<h3
 										className={`
-											  ${
-											arabic__font === arb__big
-												? arb__big
-												: arb__small
-										} py-3 w-full text-right`}
+											  ${arabic__font === arb__big ? arb__big : arb__small} py-3 w-full text-right`}
 									>
 										{surah.arabic_text}
 									</h3>
@@ -482,7 +472,6 @@ const _1_al_fatihah = () => {
 										}
 									>
 										<h4
-											
 											className={`py-2 w-full text-justify" ${
 												bangla__font === bn__big
 													? bn__big
@@ -501,7 +490,7 @@ const _1_al_fatihah = () => {
 			</div>
 			<ScrollRestoration />
 		</>
-  )
-}
+	);
+};
 
-export default _1_al_fatihah
+export default _1_al_fatihah;
