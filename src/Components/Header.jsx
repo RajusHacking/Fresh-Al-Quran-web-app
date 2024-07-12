@@ -31,7 +31,7 @@ const Header = () => {
 		<>
 			<nav className="__border sticky top-[-1px] z-50 backdrop-blur-md">
 				<div className="my__container flex justify-between items-center  h-[50px] lg:h-[66px] m-auto ">
-					<div className="logo-div ">
+					<NavLink to="/" className="logo-div ">
 						<img
 							src={
 								theme === "theme__dark__mode"
@@ -40,7 +40,7 @@ const Header = () => {
 							}
 							className="w-[40px] ml-[15px]"
 						/>
-					</div>
+					</NavLink>
 					<NavLink
 						onClick={switch__theme}
 						className="h-9 w-9 mr-4 p-[3px]"
