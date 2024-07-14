@@ -16,7 +16,7 @@ const _6_al_anam = () => {
 
     const number = "৬";
 	const name = "আল-আন'আম";
-	const means = "গৃৃহপালিত পশু";
+	const means = "গৃহপালিত পশু";
 	const verse_num_bn = "১৬৫";
 	const place = "মক্কা";
 
